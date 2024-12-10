@@ -8,21 +8,32 @@
         <div class="col-2"></div>
         <div class="col">
             <div class="mb-3">
-                <label for="txtEmail" class="form-label">Email address</label>
-                <asp:TextBox runat="server" CssClass="form-control" ID="txtEmail"/>
+                <label for="txtNombre" class="form-label">Nombre</label>
+                <asp:TextBox runat="server" CssClass="form-control" ID="txtNombre" />
             </div>
             <div class="mb-3">
                 <label for="txtPassword" class="form-label">Password</label>
                 <asp:TextBox runat="server" CssClass="form-control" ID="txtPassword" type="password" />
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            
-            <asp:Button Text="Ingresar" CssClass="btn btn-primary" ID="btnAceptar" OnClick="btnAceptar_Click" runat="server" />   
+            <asp:Button Text="Ingresar" CssClass="btn btn-primary" ID="btnAceptar" OnClick="btnAceptar_Click" runat="server" />
         </div>
         <div class="col-2"></div>
+    </div>
+    <br />
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="\media\Messi2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
 

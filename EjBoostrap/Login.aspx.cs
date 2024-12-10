@@ -16,7 +16,7 @@ namespace EjBoostrap
 
         protected void btnAceptar_Click(object sender, EventArgs e) 
         {
-            string hola = txtEmail.Text;
+            string nombre = txtNombre.Text;
         }
     }
 }

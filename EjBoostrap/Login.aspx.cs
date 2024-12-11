@@ -17,6 +17,13 @@ namespace EjBoostrap
         protected void btnAceptar_Click(object sender, EventArgs e) 
         {
             string nombre = txtNombre.Text;
+            string password = txtPassword.Text;
+
+            Session.Add("usuario", nombre);
+            Session.Add("pass", password);
+
+            //Response.Redirect("Default.aspx?nombre= " + nombre + "&pass=" + txtPassword.Text, false);
+            Response.Redirect("Default.aspx", false);
         }
     }
 }

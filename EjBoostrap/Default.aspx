@@ -4,14 +4,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <h1>Bienvenido</h1>
+    
     <% if (user != "")
-        {%>
+        { %>
     <h2>Ingresaste!!! </h2>
-    <asp:Label Text=¨text¨ ID="lblUser" runat="server"/>
+    <asp:Label Text=¨text¨ ID="lblUser" runat="server" />
 
     <%}
-        else
-        { %>
+    else
+    { %>
     <h2>Debes loguearte para poder acceder al contenido de la pagina 👇👇👇</h2>
     <br />
     <a href="Login.aspx">Login</a>

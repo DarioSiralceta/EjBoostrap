@@ -12,8 +12,9 @@ namespace EjBoostrap
         public string user {  get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            string user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "";
-            lblUser.Text = user + "Tu ingreso fue exitoso!!";
+            //user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "";
+            user = Session["usuario"] != null ? Session["usuario"].ToString() : "";
+            lblUser.Text = user + " tu ingreso fue exitoso!!";
 
         }
     }

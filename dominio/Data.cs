@@ -34,6 +34,9 @@ namespace dominio
         {
             List<Data> lista = new List<Data>();
             lista.Add(new Data());
+            lista.Add(new Data());
+
+
 
             lista[0].Id = 1;
             lista[0].Nombre = "Dario";
@@ -42,7 +45,16 @@ namespace dominio
             lista[0].FechaNacimiento = DateTime.Now;
             lista[0].Direccion = "Alvarez thomas 1847";
             lista[0].Argentina = true;
-            lista[0].Licencia = false;
+            lista[0].Licencia = true;
+
+            lista[1].Id = 2;
+            lista[1].Nombre = "Micaela";
+            lista[1].Apellido = "Dominguez";
+            lista[1].DNI = 32402895;
+            lista[1].FechaNacimiento = DateTime.Now;
+            lista[1].Direccion = "Thomas 1847";
+            lista[1].Argentina = true;
+            lista[1].Licencia = false;
 
 
 

@@ -35,11 +35,15 @@ namespace EjBoostrap
             a.Argentina = chkArgentina.Checked;
             a.Licencia = chkLicencia.Checked;
 
+            
+
+
 
             //((List<Data>)Session["listaData"]).Add(a);
 
             List<Data> temporal = (List<Data>)Session["listaData"];
             temporal.Add(a);
+            
 
             Response.Redirect("data.aspx");
 

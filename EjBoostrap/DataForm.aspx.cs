@@ -13,7 +13,14 @@ namespace EjBoostrap
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.QueryString["id"] != null)
+            {
+                int id = int.Parse(Request.QueryString["id"].ToString());
+                List<Data> temporal = (List<Data>)Session["listaData"];
+                Data seleccionado = temporal.Find(x => x.Id == id);
+                txtNombre.Text = seleccionado.Nombre;
+                txtId.Text = seleccionado.Id.ToString();
+            }
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)

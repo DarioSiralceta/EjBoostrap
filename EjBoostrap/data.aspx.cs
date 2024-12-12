@@ -22,5 +22,27 @@ namespace EjBoostrap
             dgvdata.DataSource = Session["listaData"];
             dgvdata.DataBind();
         }
+
+    protected void dgvdata_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        
+        
+       // var algo = dgvdata.SelectedRow.Cells[0].Text;
+        var id = dgvdata.SelectedDataKey.Value.ToString();
+        Response.Redirect("DataForm.aspx?id=" + id);
+        
+        
+        
+        
+        
+        
+     }
+
+
+
+
+
+
+
     }
 }

@@ -12,8 +12,14 @@ namespace EjBoostrap
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataNegocio negocio = new DataNegocio();
-            dgvdata.DataSource = negocio.listar();
+            if(Session["listaData"] == null)
+            {
+
+                DataNegocio negocio = new DataNegocio();
+                Session.Add("listaData", negocio.listar());
+            }
+
+            dgvdata.DataSource = Session["listaData"];
             dgvdata.DataBind();
         }
     }
